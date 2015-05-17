@@ -1,0 +1,16 @@
+/**
+ * 主页样式
+ */
+#header{
+	.links{
+		.item{
+			float: left;
+			list-style: none;
+		}
+	}
+}
+.slider-item{
+	&.slider-0{
+
+	}
+}

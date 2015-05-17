@@ -1,0 +1,105 @@
+/**
+ * 布局样式
+ */
+$layout-width: 999px;
+
+@mixin center(){
+	margin-left: auto;
+	margin-right: auto;
+}
+div{
+	border: 1px solid #333;
+}
+body{
+	padding-top: 60px;
+}
+#header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	.header-wrap{
+		width: $layout-width;
+		@include center;
+		overflow: hidden;
+	}
+	.logo{
+		display: block;
+		float: left;
+		margin: 12px 35px 0 0;
+	}
+	.links{
+		float: left;
+		overflow: hidden;
+		height: 60px;
+		line-height: 60px;
+		margin: 0 40px 0 0;
+		padding: 0;
+		a{
+			display: inline-block;
+			padding: 0 30px;
+		}
+	}
+}
+.slider{
+	width: 100%;
+	height: 350px;
+	position: relative;
+	.slider-item{
+		position: absolute;
+		width: 100%;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bullet{
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		margin-left: 50px;
+	}
+}
+.main{
+	width: $layout-width + 10;
+	@include center;
+	.area{
+		margin-top: 30px;
+		.area-hd{
+			height: 40px;
+			margin: 0 0 20px 0;
+			padding: 0 0 0 20px;
+		}
+	}
+}
+
+.works{
+	min-height: 500px;
+	.work-list{
+		overflow: hidden;
+		.work-item{
+			float: left;
+			width: 300px;
+			height: 200px;
+			padding: 0 30px 20px 0;
+		}
+	}
+}
+
+.about{
+	.about-tab{
+		list-style: none;
+		overflow: hidden;
+		li{
+			float: left;
+		}
+	}
+	.about-container{
+		position: relative;
+		.about-content{
+			position: absolute;
+			width: 100%;
+			min-height: 400px;
+		}
+	}
+}

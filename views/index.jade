@@ -1,0 +1,49 @@
+doctype html
+html(lang="zh-cmn-Hans")
+  head
+    include ./common/_meta.jade
+    title= pageTitle
+    link(rel="stylesheet", href="/stylesheets/base.css")
+    link(rel="stylesheet", href="/stylesheets/layout.css")
+    link(rel="stylesheet", href="/stylesheets/index.css")
+  body
+    div#header
+      div.header-wrap
+        h1.logo
+          a(href="#"): img(src="", alt="")
+        ul.links
+          li.item: a(href="#") 首页
+          li.item: a(href="#") 作品
+          li.item: a(href="#") 业务
+          li.item: a(href="#") 站点
+          li.item: a(href="#") 关于
+    div.slider
+      div.slider-item.slider-0 slider
+      ul.bullet
+        li: a(href="#")
+        li: a(href="#")
+    div.main
+      div.area.works
+        h2.area-hd 成品项目
+        div.work-list
+          div.work-item 1
+          div.work-item 2
+          div.work-item 3
+          div.work-item 4
+          div.work-item 5
+          div.work-item 6
+      div.area.about
+        h2.area-hd 关于我
+        div.about-wrap.clearfix
+          ul.about-tab
+            li.current(data-id="0"): a(href="#")
+            li(data-id="1"): a(href="#")
+            li(data-id="2"): a(href="#")
+            li(data-id="3"): a(href="#")
+          div.about-container.clearfix
+            div.about-content.content-0.current
+            div.about-content.content-1
+            div.about-content.content-2
+            div.about-content.content-3
+
+
