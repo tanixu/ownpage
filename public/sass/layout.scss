@@ -7,9 +7,7 @@ $layout-width: 999px;
 	margin-left: auto;
 	margin-right: auto;
 }
-div{
-	border: 1px solid #333;
-}
+
 body{
 	padding-top: 60px;
 }
@@ -19,6 +17,10 @@ body{
 	top: 0;
 	left: 0;
 	height: 60px;
+	z-index: 99;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 	.header-wrap{
 		width: $layout-width;
 		@include center;
@@ -44,12 +46,12 @@ body{
 }
 .slider{
 	width: 100%;
-	height: 350px;
+	height: 430px;
 	position: relative;
 	.slider-item{
 		position: absolute;
 		width: 100%;
-		height: 350px;
+		height: 430px;
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
@@ -82,6 +84,10 @@ body{
 			width: 300px;
 			height: 200px;
 			padding: 0 30px 20px 0;
+			a>img{
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }
@@ -92,14 +98,44 @@ body{
 		overflow: hidden;
 		li{
 			float: left;
+			height: 45px;
+			line-height: 45px;
+			width: 130px;
+			a{
+				display: block;
+			}
 		}
 	}
 	.about-container{
-		position: relative;
 		.about-content{
-			position: absolute;
 			width: 100%;
 			min-height: 400px;
+			height: 500px;
+			display: none;
+			&.current{
+				display: block;
+			}
+		}
+	}
+}
+#footer{
+	margin-top: 30px;
+	.footer-wrap{
+		width: $layout-width;
+		@include center;
+		line-height: 40px;
+		.footer-l{
+			float: left;
+			width: 300px;
+			overflow: hidden;
+			padding: 20px 0;
+		}
+		.footer-r{
+			float: right;
+			padding: 20px 0;
+			a,span{
+				padding: 0 10px;
+			}
 		}
 	}
 }

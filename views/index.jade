@@ -10,15 +10,15 @@ html(lang="zh-cmn-Hans")
     div#header
       div.header-wrap
         h1.logo
-          a(href="#"): img(src="", alt="")
+          a(href="#"): img(src="/images/logo.png", alt="")
         ul.links
-          li.item: a(href="#") 首页
+          li.item.selected: a(href="#") 首页
           li.item: a(href="#") 作品
           li.item: a(href="#") 业务
           li.item: a(href="#") 站点
           li.item: a(href="#") 关于
     div.slider
-      div.slider-item.slider-0 slider
+      div.slider-item.slider-0
       ul.bullet
         li: a(href="#")
         li: a(href="#")
@@ -26,24 +26,35 @@ html(lang="zh-cmn-Hans")
       div.area.works
         h2.area-hd 成品项目
         div.work-list
-          div.work-item 1
-          div.work-item 2
-          div.work-item 3
-          div.work-item 4
-          div.work-item 5
-          div.work-item 6
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
       div.area.about
         h2.area-hd 关于我
         div.about-wrap.clearfix
           ul.about-tab
-            li.current(data-id="0"): a(href="#")
-            li(data-id="1"): a(href="#")
-            li(data-id="2"): a(href="#")
-            li(data-id="3"): a(href="#")
+            li.current(data-id="0"): a(href="#") 1
+            li(data-id="1"): a(href="#") 2
+            li(data-id="2"): a(href="#") 3
+            li(data-id="3"): a(href="#") 4
           div.about-container.clearfix
             div.about-content.content-0.current
             div.about-content.content-1
             div.about-content.content-2
             div.about-content.content-3
+    div#footer
+      div.footer-wrap.clearfix
+        div.footer-l
+          span.f-intro.
+            努力打造前端攻城狮学习，交流，进步的平台
+        div.footer-r
+          a(href="#") 联系我们
+          span -
+          a(href="#") 关于我们
+          span -
+          a(href="#") 捐赠我们
 
 

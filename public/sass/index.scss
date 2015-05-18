@@ -2,15 +2,33 @@
  * 主页样式
  */
 #header{
+	background: url(../images/bg_nav_rep.png) repeat-x;
 	.links{
 		.item{
 			float: left;
 			list-style: none;
+			&.selected{
+				background: #242630;
+			}
+		}
+		a{
+			color: #fff;
+			&:hover{
+				background: #484c57;
+			}
 		}
 	}
 }
 .slider-item{
 	&.slider-0{
+		background: url(../images/slider-0.png);
+	}
+}
 
+#footer{
+	background-color: #474443;
+	color: #fff;
+	a{
+		color: #fff;
 	}
 }

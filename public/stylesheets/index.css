@@ -1,1 +1,1 @@
-#header .links .item{float:left;list-style:none}
+#header{background:url(../images/bg_nav_rep.png) repeat-x}#header .links .item{float:left;list-style:none}#header .links .item.selected{background:#242630}#header .links a{color:#fff}#header .links a:hover{background:#484c57}.slider-item.slider-0{background:url(../images/slider-0.png)}#footer{background-color:#474443;color:#fff}#footer a{color:#fff}
