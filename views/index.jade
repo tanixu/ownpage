@@ -19,6 +19,7 @@ html(lang="zh-cmn-Hans")
           li.item: a(href="#") 关于
     div.slider
       div.slider-item.slider-0
+        a(href="#"): img(src="/images/slider-1.jpg", alt="")
       ul.bullet
         li: a(href="#")
         li: a(href="#")
@@ -26,25 +27,49 @@ html(lang="zh-cmn-Hans")
       div.area.works
         h2.area-hd 成品项目
         div.work-list
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
-          div.work-item: a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+          div.work-item 
+            a(href="#"): img(src="/images/pro-1.png", alt="pro1")
+            div.work-cover
+              h3 IAIC规则中心
+              p IAIC规则中心是IAIC电子商务办公室的附属项目 
+          div.work-item
+            a(href="#"): img(src="/images/pro-2.png", alt="pro1")
+            div.work-cover
+              h3 IAIC帮助中心
+              p IAIC帮助中心是IAIC电子商务办公室的附属项目 
+          div.work-item
+            a(href="#"): img(src="/images/pro-3.png", alt="pro1")
+            div.work-cover
+              h3 信息港
+              p 展示展销信息展示平台
       div.area.about
         h2.area-hd 关于我
         div.about-wrap.clearfix
           ul.about-tab
-            li.current(data-id="0"): a(href="#") 1
-            li(data-id="1"): a(href="#") 2
-            li(data-id="2"): a(href="#") 3
-            li(data-id="3"): a(href="#") 4
+            li.current(data-id="0") 个人简介
+            li(data-id="1") 技能特长
+            li(data-id="2") 学习经历
+            li(data-id="3") 理想愿望
+            li.kong
           div.about-container.clearfix
             div.about-content.content-0.current
+              p 姓名：徐天怿
+              p 年龄：20
+              p 户口：湖北黄冈
+              p 现居地：四川成都
+              p 联系方式：18583987197
+              p 工作地点：四川省新都区新繁镇新繁大道198号
+              p 公司：四川长德投资集团有限公司
             div.about-content.content-1
+              p 爱好：阅读，游戏，运动，动漫，电视剧，电影，戏剧，舞蹈，小品
+              p 
             div.about-content.content-2
+              p 2000/09-- 2006/06&emsp;湖北省黄冈市武穴市师范附属小学 | 普通小学
+              p 2006/09-- 2009/06&emsp;湖北省黄冈市武穴市第二实验中学 | 普通中学
+              p 2009/09-- 2012/06&emsp;湖北省黄冈市武穴市育才高中 | 普通高中
+              p 2012/09-- 2015/06&emsp;武汉工程职业技术学院 | 计算机软件 | 大专
             div.about-content.content-3
+              p 我是要成为海贼王的男人
     div#footer
       div.footer-wrap.clearfix
         div.footer-l
@@ -56,5 +81,6 @@ html(lang="zh-cmn-Hans")
           a(href="#") 关于我们
           span -
           a(href="#") 捐赠我们
-
+  script(src="http://cdjt-static.oss-cn-qingdao.aliyuncs.com/common/js/jquery.min.js")
+  script(src="/javascripts/index.js")
 
