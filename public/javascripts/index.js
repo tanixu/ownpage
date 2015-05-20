@@ -24,7 +24,7 @@
 		works :function(){
 			$(".work-item").on("mouseenter",function(){
 				$(this).find(".work-cover").css({"z-index" : "10"}).animate({
-					"left" : "0px"
+					"left" : "1px"
 				});
 			});
 			$(".work-item").on("mouseleave",function(){
@@ -32,6 +32,10 @@
 					"left" : "-300px"
 				});
 			});
+			$(".work-cover").on("click",function(){
+				var url = $(this).prev().attr("href");
+				window.open(url); 
+			})
 		}
 	}
 	own.init();

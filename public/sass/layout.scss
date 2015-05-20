@@ -10,6 +10,7 @@ $layout-width: 999px;
 
 body{
 	padding-top: 60px;
+	background-color: #e9e9e9;
 }
 #header{
 	width: 100%;
@@ -63,10 +64,10 @@ body{
 	}
 }
 .main{
-	width: $layout-width + 10;
+	width: 100%;
 	@include center;
 	.area{
-		margin-top: 30px;
+		margin-bottom: 30px;
 		.area-hd{
 			height: 40px;
 			margin: 0 0 20px 0;
@@ -75,8 +76,14 @@ body{
 	}
 }
 
+.works-wrap{
+	width: 100%;
+}
 .works{
+	width: $layout-width ;
+	@include center;
 	min-height: 500px;
+	padding-top: 30px;
 	.work-list{
 		overflow: hidden;
 		.work-item{
@@ -89,25 +96,26 @@ body{
 			a>img{
 				width: 100%;
 				height: 100%;
-				border: 1px solid #cacaca;
 			}
 			.work-cover{
 				position: absolute;
-				top: 0px;
+				top: 2px;
 				left: -300px;
 				width: 300px;
 				height: 200px;
 				background-color: #fff;
 				z-index: -1;
-				border:1px solid #cacaca;
 				cursor: pointer;
 				text-align: center;
+				opacity: 0.8;
 			}
 		}
 	}
 }
 
 .about{
+	width: $layout-width ;
+	@include center;
 	.about-tab{
 		list-style: none;
 		overflow: hidden;
