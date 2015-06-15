@@ -52,7 +52,7 @@ body{
 	.slider-item{
 		position: absolute;
 		width: 100%;
-		height: 430px;
+		height: 100%;
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
@@ -162,4 +162,20 @@ body{
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .slider{
+  	height: 380px;
+  }
+}
+@media screen and (min-width: 860px) and (max-width: 1024px) {
+  .slider{
+  	height: 320px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .slider{
+  	height: 280px;
+  }
 }
